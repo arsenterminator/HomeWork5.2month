@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:laayout_marginTop="10d"
+        android:drawableStart="@drawable/ic_baseline_keyboard_backspace_24"
+        android:layout_marginHorizontal="12dp"/>
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username              Trivia"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/top_circle_et"
+        android:padding="20dp"
+        android:layout_marginHorizontal="16dp"
+        android:id="@+id/etUsername"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
+        android:hint="Email"
+        android:textColorHint="@color/white"
+        android:background="#8DD690"
+        android:padding="20dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/etEmail"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:background="@drawable/bottom_circle_et"
+        android:padding="20dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/etPassword"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etPassword"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_btn"
+        android:layout_marginHorizontal="16dp"
+        android:padding="18dp"
+        android:text="NEXT"
+        android:textSize="18sp"
+        android:id="@+id/btnNext"
+        android:drawableEnd="@drawable/ic_baseline_navigate_next_24"
+        android:paddingEnd="12dp"
+        android:paddingStart="24dp"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/ic_baseline_directions_car_24"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/imgCar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imgCar"
+        android:text="Trivia"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
